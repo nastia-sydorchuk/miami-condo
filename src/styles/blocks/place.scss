@@ -6,7 +6,7 @@
     margin-bottom: 16px;
     overflow: hidden;
 
-    transition: transform 0.3s;
+    transition: transform $transition-duration;
 
     &::after {
       content: "";

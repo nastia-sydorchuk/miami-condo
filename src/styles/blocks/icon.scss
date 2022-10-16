@@ -7,7 +7,7 @@
   background-position: center;
   background-repeat: no-repeat;
 
-  transition: all 0.3s;
+  transition: all $transition-duration;
 
   &--menu {
     background-image: url(../images/menu.svg);
@@ -19,6 +19,10 @@
 
   &--cross {
     background-image: url(../images/cross.svg);
+
+    &:hover {
+      transform: rotate(90deg);
+    }
   }
 
   &--phone {
@@ -44,7 +48,7 @@
         opacity: 0;
         pointer-events: none;
 
-        transition: opacity 0.3s;
+        transition: opacity $transition-duration;
       }
 
       &:hover {

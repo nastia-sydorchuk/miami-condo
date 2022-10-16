@@ -2,8 +2,14 @@
   height: 46px;
   width: 78px;
 
+  transition: transform $transition-duration;
+
   @include onDesktop {
     height: 76px;
     width: 130px;
+  }
+
+  &:hover {
+    transform: scale(1.1);
   }
 }

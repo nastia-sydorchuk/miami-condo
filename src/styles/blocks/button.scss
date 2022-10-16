@@ -10,7 +10,7 @@
   line-height: 14px;
   cursor: pointer;
 
-  transition: all 0.3s;
+  transition: all $transition-duration;
 
   &:hover {
     color: #fff;

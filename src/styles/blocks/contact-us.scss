@@ -14,7 +14,7 @@
 
     margin: 0 0 8px;
 
-    transition: color 0.3s;
+    transition: color $transition-duration;
 
     &:hover {
       color: #000;
@@ -31,6 +31,16 @@
 
     &--last {
       margin-bottom: 32px;
+    }
+  }
+
+  &__message {
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+
+    &--hidden {
+      display: none;
     }
   }
 }

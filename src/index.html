@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miami</title>
+    <title>Miami Condo Kings</title>
     <link rel="icon" href="./images/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link
@@ -81,7 +81,7 @@
             </h2>
           </div>
           <div class="grid__item grid__item--7-12">
-            <a href="#" class="about-us__link link">Over 50 years experience in love.</a>
+            <p class="about-us__link link">Over 50 years experience in love.</p>
             <p class="about-us__paragraph">
               Mazel and VA Tsukkerman in his "Analysis of musical works." Pointillism, which originated in the music of the early twentieth century, microforms, found a distant historical.
             </p>
@@ -167,7 +167,7 @@
         </div>
         <div class="grid grid--desktop">
           <div class="grid__item grid__item--6-7">
-            <a href="#" class="link button">View all</a>
+            <a href="#gallery" class="link button">View all</a>
           </div>
         </div>
       </div>
@@ -184,7 +184,7 @@
               <div class="testimonial__photo-container">
                 <img src="./images/people/1.jpg" alt="Leslie Mckinney" class="testimonial__photo">
               </div>
-              <h3 class="testimonial__name"><a href="#" class="link">Leslie Mckinney</a></h3>
+              <h3 class="testimonial__name">Leslie Mckinney</h3>
               <div class="testimonial__role">CEO</div>
               <div class="testimonial__phrase">Nice work, Certificates National Association of Realtors (USA)</div>
             </div>
@@ -195,7 +195,7 @@
               <div class="testimonial__photo-container">
                 <img src="./images/people/2.jpg" alt="Scarlett Hawkins" class="testimonial__photo">
               </div>
-              <div class="testimonial__name"><a href="#" class="link">Scarlett Hawkins</a></div>
+              <h3 class="testimonial__name">Scarlett Hawkins</h3>
               <div class="testimonial__role">Senior Vice President</div>
               <div class="testimonial__phrase">My soul is illuminated by an unearthly joy, as these beautiful spring morning, which I enjoy with all my heart</div>
             </div>
@@ -204,7 +204,7 @@
           <div class="grid__item grid__item--9-12">
             <div class="testimonial">
               <div class="testimonial__photo-container"><img src="./images/people/3.jpg" alt="Max Henry" class="testimonial__photo"></div>
-              <div class="testimonial__name"><a href="#" class="link">Max Henry</a></div>
+              <h3 class="testimonial__name">Max Henry</h3>
               <div class="testimonial__role">Chief Design Officer</div>
               <div class="testimonial__phrase testimonial__phrase--last">When my lovely valley of steam rises and half-day sun is above an impermeable</div>
             </div>
@@ -244,21 +244,28 @@
           </div>
 
           <div class="grid__item grid__item--8-12">
-            <form action="get">
+            <form>
+              <div class="form-field__message form-field__message--error form-field__message--hidden">
+                Your name is required.
+              </div>
               <input
-                name="text"
+                name="name"
                 type="text"
                 class="contact-us__form-field form-field"
                 placeholder="Name"
-                required
               >
+              <div class="form-field__message form-field__message--error form-field__message--hidden">
+                Email is invalid (e.g. test@example.com).
+              </div>
               <input
-                name="Email"
-                type="email"
+                name="email"
+                type="text"
                 class="contact-us__form-field form-field"
                 placeholder="Email"
-                required
               >
+              <div class="form-field__message form-field__message--error form-field__message--hidden">
+                Your message is required.
+              </div>
               <textarea
                 name="message"
                 class="
@@ -266,10 +273,13 @@
                   form-field--textarea
                   contact-us__form-field--last"
                 placeholder="Message"
-                required
               ></textarea>
+
               <button class="button button--primary">Consultation</button>
             </form>
+            <div class="contact-us__message contact-us__message--hidden">
+              Thank you, <br> we will get in touch with you soon!
+            </div>
           </div>
         </div>
       </div>
